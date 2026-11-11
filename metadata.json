@@ -1,0 +1,6 @@
+{
+  "name": "Richard Rental Marketplace",
+  "description": "Short-stay and long-stay rental marketplace in Uganda and East Africa. Book verified homes, negotiate directly with landlords, and pay deposit via Mobile Money.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

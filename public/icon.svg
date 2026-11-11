@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E6B50"/>
+      <stop offset="100%" stop-color="#0B3D2E"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2A541"/>
+      <stop offset="100%" stop-color="#D9643A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with subtle curve -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Outer architectural roof outline -->
+  <path d="M256 86 L414 206 L386 230 L256 130 L126 230 L98 206 Z" fill="url(#accentGrad)"/>
+  
+  <!-- Chimney accent -->
+  <path d="M336 120 L336 170 L364 170 L364 142 Z" fill="#FAF7F2" opacity="0.85"/>
+  
+  <!-- House frame -->
+  <path d="M142 228 L256 140 L370 228 L370 404 C370 415 361 424 350 424 L162 424 C151 424 142 415 142 404 Z" fill="#0F1A17" stroke="#FAF7F2" stroke-width="6" opacity="0.4"/>
+  
+  <!-- Iconic "R" Monogram styled inside -->
+  <text x="256" y="362" text-anchor="middle" font-family="'Fraunces', Georgia, serif" font-size="220" font-weight="700" fill="#FAF7F2">R</text>
+  
+  <!-- Warm sunset ember dot -->
+  <circle cx="340" cy="350" r="16" fill="url(#accentGrad)"/>
+</svg>

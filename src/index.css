@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ink: #0F1A17;
+    --color-emerald: #0E6B50;
+    --color-forest: #0B3D2E;
+    --color-amber: #F2A541;
+    --color-terracotta: #D9643A;
+    --color-ivory: #FAF7F2;
+    --color-sand: #F1EBE1;
+    --color-muted: #6B7A73;
+    --color-success: #1F9D6B;
+    --color-warning: #E8A33D;
+    --color-danger: #C8452F;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-display, .font-serif {
+    font-family: 'Fraunces', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Gradients */
+.gradient-cta {
+  background: linear-gradient(135deg, #F2A541 0%, #D9643A 100%);
+}
+
+.gradient-cta-hover:hover {
+  background: linear-gradient(135deg, #f5b159 0%, #e0724a 100%);
+}
+
+.gradient-brand {
+  background: linear-gradient(135deg, #0E6B50 0%, #0B3D2E 100%);
+}
+
+.gradient-hero-overlay {
+  background: linear-gradient(180deg, rgba(11, 61, 46, 0.25) 0%, rgba(15, 26, 23, 0.82) 100%);
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #F2A541 0%, #D9643A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #1F9D6B 0%, #0E6B50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle gradient border */
+.border-gradient-brand {
+  border-image: linear-gradient(135deg, #0E6B50, #F2A541) 1;
+}
+
+/* Shimmer animation for skeleton */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EBE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0E6B50;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B3D2E;
+}
